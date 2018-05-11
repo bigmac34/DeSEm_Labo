@@ -1,0 +1,4 @@
+<map id="XF" name="XF">
+<area shape="rect" id="node2" href="$class_x_f_thread.html" title="{XFThread\n|# _bExecuting\l|+ XFThread()\l+ ~XFThread()\l+ start()\l+ pushEvent()\l+ scheduleTimeout()\l+ unscheduleTimeout()\l# execute()\l# getTimeoutManager()\l# dispatchEvent()\l}" alt="" coords="9,304,185,499"/>
+<area shape="rect" id="node3" href="$class_x_f_event_queue.html" title="{XFEventQueue\n||+ XFEventQueue()\l+ ~XFEventQueue()\l+ empty()\l}" alt="" coords="22,133,172,240"/>
+</map>

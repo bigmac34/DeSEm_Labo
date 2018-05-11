@@ -1,0 +1,4 @@
+<map id="IXFEvent" name="IXFEvent">
+<area shape="rect" id="node2" href="$class_i_x_f_reactive.html" title="{IXFReactive\n||+ IXFReactive()\l+ ~IXFReactive()\l+ startBehavior()\l+ pushEvent()\l+ process()\l}" alt="" coords="5,5,139,141"/>
+<area shape="rect" id="node3" href="$struct_i_x_f_event_1_1__t_event_status.html" title="{IXFEvent::_tEventStatus\n|+ shouldDelete\l|+ _tEventStatus()\l}" alt="" coords="163,35,337,112"/>
+</map>

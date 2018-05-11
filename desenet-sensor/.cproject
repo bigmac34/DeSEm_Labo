@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523" moduleId="org.eclipse.cdt.core.settings" name="Stm32 - Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523" name="Stm32 - Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523." name="/" resourcePath="">
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.778204741" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.228358817" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.debug" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.694812059" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.2130148884" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.759894960" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.1799807241" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1693188387" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.2075802259" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.1219270371" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.1312476338" name="Enable extra warnings (-Wextra)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nomoveloopinvariants.1628400597" name="Disable loop invariant move (-fno-move-loop-invariants)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nomoveloopinvariants" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.575396329" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.361389234" name="Architecture" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.architecture" value="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.601702190" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m3" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.1792914479" name="Instruction set" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.268830568" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.383715961" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.1033202034" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.1906528706" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.845949589" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.773075601" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.1838545340" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.1362329611" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.921148288" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1570109397" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.2087721789" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.298747209" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/desenet-sensor}/Debug" id="ilg.gnuarmeclipse.managedbuild.cross.builder.2127190286" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Stm32 - Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Stm32 - Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MeshSim - Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="MeshSim - Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.1294346553" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.898643935" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.591801784" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/cmsis"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/stm32f1-stdperiph"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/target"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/critical"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/board"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.571727545" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
+									<listOptionValue builtIn="false" value="STM32F10X_HD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
+									<listOptionValue builtIn="false" value="TC_STM32"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.978065123" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1229099314" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.20845099" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/cmsis"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/stm32f1-stdperiph"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/target"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/critical"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/interfaces"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/board"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1252072947" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
+									<listOptionValue builtIn="false" value="STM32F10X_HD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
+									<listOptionValue builtIn="false" value="TC_STM32"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.203692929" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.712369777" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths.1882309447" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/app"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/cmsis"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/stm32f1-stdperiph"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/target"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/critical"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/board"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.noexceptions.667906945" name="Do not use exceptions (-fno-exceptions)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.noexceptions" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nortti.859796656" name="Do not use RTTI (-fno-rtti)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nortti" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nousecxaatexit.491490541" name="Do not use _cxa_atexit() (-fno-use-cxa-atexit)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nousecxaatexit" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nothreadsafestatics.207013513" name="Do not use thread-safe statics (-fno-threadsafe-statics)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nothreadsafestatics" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.381455221" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
+									<listOptionValue builtIn="false" value="STM32F10X_HD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
+									<listOptionValue builtIn="false" value="TC_STM32"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.653469606" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.937568520" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1104276059" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths.592586814" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;../ldscripts&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile.1355419483" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="mem.ld"/>
+									<listOptionValue builtIn="false" value="libs.ld"/>
+									<listOptionValue builtIn="false" value="sections.ld"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nostart.1457682554" name="Do not use standard start files (-nostartfiles)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nostart" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.usenewlibnano.129506443" name="Use newlib-nano (--specs=nano.specs)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.usenewlibnano" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.423318961" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.2035927514" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.1460269632" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/ldscripts"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.1121867432" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="mem.ld"/>
+									<listOptionValue builtIn="false" value="libs.ld"/>
+									<listOptionValue builtIn="false" value="sections.ld"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.nostart.1611779585" name="Do not use standard start files (-nostartfiles)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.nostart" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.usenewlibnano.1368865916" name="Use newlib-nano (--specs=nano.specs)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.usenewlibnano" value="true" valueType="boolean"/>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.804816559" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.1600608781" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.1592916947" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.1877939761" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.958312471" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.377300858" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.1623132169" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.181964994" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.1974767156" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1656724695" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.164885250" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.1383105563" name="/" resourcePath="platform/linux-meshsim/desenet">
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.2016805789" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug" unusedChildren="">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.228358817.622121183" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.228358817"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.694812059.769744123" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.694812059"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.2130148884.2023675409" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.2130148884"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.759894960.1348888201" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.759894960"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.1799807241.58813728" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.1799807241"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1693188387.251669228" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1693188387"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.2075802259.406792888" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.2075802259"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.1219270371.999379756" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.1219270371"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.1312476338.1726136196" name="Enable extra warnings (-Wextra)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.1312476338"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nomoveloopinvariants.1628400597.1094765701" name="Disable loop invariant move (-fno-move-loop-invariants)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nomoveloopinvariants.1628400597"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.575396329.848718429" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.575396329"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.361389234.1947021019" name="Architecture" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.361389234"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.601702190.710025306" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.601702190"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.1792914479.802647311" name="Instruction set" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.1792914479"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.268830568.1916043210" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.268830568"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.383715961.1549392532" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.383715961"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.1033202034.936467340" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.1033202034"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.1906528706.694113357" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.1906528706"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.845949589.1647463675" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.845949589"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.773075601.1917297215" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.773075601"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.1838545340.632595842" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.1838545340"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.1362329611.338544379" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.1362329611"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.921148288.1218953179" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.921148288"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1570109397.1226601393" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1570109397"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.2087721789.922908845" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.2087721789"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.606791372" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.1294346553">
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.932542616" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.446980611" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1229099314">
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.248901567" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.2114241131" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.712369777">
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.2065844371" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.501339020" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.937568520"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.1130420753" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.423318961"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.1047475763" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.1600608781"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.1514795862" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.1592916947"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.800178598" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.1877939761"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1314690104" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1656724695"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="app"/>
+						<entry excluding="desenet/mischief|desenet/gateway" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="mdw"/>
+						<entry excluding="linux-meshsim" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="platform"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="src/stm32f1-stdperiph/stm32f10x_usart.c|src/stm32f1-stdperiph/stm32f10x_spi.c|src/stm32f1-stdperiph/stm32f10x_dbgmcu.c|src/stm32f1-stdperiph/stm32f10x_dac.c|src/stm32f1-stdperiph/stm32f10x_sdio.c|src/stm32f1-stdperiph/stm32f10x_i2c.c|src/stm32f1-stdperiph/stm32f10x_tim.c|src/stm32f1-stdperiph/stm32f10x_fsmc.c|src/stm32f1-stdperiph/stm32f10x_flash.c|src/stm32f1-stdperiph/stm32f10x_can.c|src/stm32f1-stdperiph/stm32f10x_bkp.c|src/stm32f1-stdperiph/stm32f10x_crc.c|src/stm32f1-stdperiph/stm32f10x_cec.c|src/stm32f1-stdperiph/stm32f10x_pwr.c|src/stm32f1-stdperiph/stm32f10x_wwdg.c|src/stm32f1-stdperiph/stm32f10x_adc.c|src/stm32f1-stdperiph/stm32f10x_exti.c|src/stm32f1-stdperiph/stm32f10x_dma.c|src/stm32f1-stdperiph/stm32f10x_iwdg.c|src/stm32f1-stdperiph/stm32f10x_rtc.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="system"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="xf"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647" moduleId="org.eclipse.cdt.core.settings" name="Stm32 - Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647" name="Stm32 - Release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647." name="/" resourcePath="">
+						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.release.334132639" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.release">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.674143838" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.195468011" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.234414452" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.280340938" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.1750832175" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.166780779" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.2018460113" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.958914292" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.744347597" name="Enable extra warnings (-Wextra)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.965208110" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.2021172335" name="Architecture" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.architecture" value="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.1899263702" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m3" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.489704441" name="Instruction set" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.8221147" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.734416678" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.372199222" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.942945841" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.1655716509" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.586702214" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.2053078088" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.146025552" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.901408313" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1215852846" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.1220335587" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1117594223" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/desenet-sensor}/Release" id="ilg.gnuarmeclipse.managedbuild.cross.builder.1089959542" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.837906892" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.869918266" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.1794652827" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;../include&quot;"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/cmsis"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/stm32f1-stdperiph"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/target"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/critical"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/board"/>
+									<listOptionValue builtIn="false" value="&quot;../system/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../system/include/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../system/include/stm32f1-stdperiph&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;../&quot;${ProjDirPath}/../desenet-common/mcu/stm32f1xx/system/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../desenet-common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../desenet-common/mcu/stm32f1xx/system/include/cmsis&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../desenet-common/mcu/stm32f1xx/system/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/platform/olimex-stm32f103-stk&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.700659015" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_HD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
+									<listOptionValue builtIn="false" value="TC_STM32"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.113865422" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.663878894" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.2072326142" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/cmsis"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/stm32f1-stdperiph"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/target"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/critical"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/interfaces"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/board"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1376834619" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_HD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
+									<listOptionValue builtIn="false" value="TC_STM32"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1032865954" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.1062248377" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths.593818935" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mcu/stm32f1xx/system/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/cmsis"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/system/include/stm32f1-stdperiph"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/target"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/critical"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mcu/stm32f1xx/system/include/cmsis"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mcu/stm32f1xx/system/include/stm32f1-stdperiph"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mcu/stm32f1xx/target"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mcu/stm32f1xx/critical"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mcu/stm32f1xx"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.noexceptions.106385549" name="Do not use exceptions (-fno-exceptions)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.noexceptions" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nortti.1719578867" name="Do not use RTTI (-fno-rtti)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nortti" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nousecxaatexit.475569910" name="Do not use _cxa_atexit() (-fno-use-cxa-atexit)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nousecxaatexit" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nothreadsafestatics.1913868363" name="Do not use thread-safe statics (-fno-threadsafe-statics)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nothreadsafestatics" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.1595527600" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_HD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
+									<listOptionValue builtIn="false" value="TC_STM32"/>
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1055248337" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.209470636" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.69127145" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths.264680709" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;../ldscripts&quot;"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile.1171814516" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="mem.ld"/>
+									<listOptionValue builtIn="false" value="libs.ld"/>
+									<listOptionValue builtIn="false" value="sections.ld"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nostart.2134934092" name="Do not use standard start files (-nostartfiles)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nostart" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.usenewlibnano.885513511" name="Use newlib-nano (--specs=nano.specs)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.usenewlibnano" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.1058670517" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.761227681" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.1682802463" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/olimex-stm32f103-stk/mcu/stm32f1xx/ldscripts"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.722366459" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="mem.ld"/>
+									<listOptionValue builtIn="false" value="libs.ld"/>
+									<listOptionValue builtIn="false" value="sections.ld"/>
+								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.nostart.1686416089" name="Do not use standard start files (-nostartfiles)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.nostart" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.usenewlibnano.261802577" name="Use newlib-nano (--specs=nano.specs)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.usenewlibnano" value="true" valueType="boolean"/>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.636667021" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.990723845" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.355111454" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.948379407" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.1954458198" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.1047270211" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.2086621808" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.968878293" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.1038485449" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.1443637973" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.1313997986" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="app"/>
+						<entry excluding="desenet/mischief|desenet/gateway" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="mdw"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="platform/olimex-stm32f103-stk"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="platform/platform-common"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="src/stm32f1-stdperiph/stm32f10x_usart.c|src/stm32f1-stdperiph/stm32f10x_spi.c|src/stm32f1-stdperiph/stm32f10x_dac.c|src/stm32f1-stdperiph/stm32f10x_dbgmcu.c|src/stm32f1-stdperiph/stm32f10x_sdio.c|src/stm32f1-stdperiph/stm32f10x_i2c.c|src/stm32f1-stdperiph/stm32f10x_tim.c|src/stm32f1-stdperiph/stm32f10x_bkp.c|src/stm32f1-stdperiph/stm32f10x_can.c|src/stm32f1-stdperiph/stm32f10x_flash.c|src/stm32f1-stdperiph/stm32f10x_fsmc.c|src/stm32f1-stdperiph/stm32f10x_crc.c|src/stm32f1-stdperiph/stm32f10x_cec.c|src/stm32f1-stdperiph/stm32f10x_pwr.c|src/stm32f1-stdperiph/stm32f10x_wwdg.c|src/stm32f1-stdperiph/stm32f10x_adc.c|src/stm32f1-stdperiph/stm32f10x_exti.c|src/stm32f1-stdperiph/stm32f10x_dma.c|src/stm32f1-stdperiph/stm32f10x_rtc.c|src/stm32f1-stdperiph/stm32f10x_iwdg.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="system"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="xf"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732" moduleId="org.eclipse.cdt.core.settings" name="MeshSim - Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732" name="MeshSim - Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.485003482" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1964502228" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/desenet-sensor}/MeshSim - Debug" id="cdt.managedbuild.target.gnu.builder.base.1801911810" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.895875790" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1588296631" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.2086535782" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/app"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim/mcu"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim/board"/>
+									<listOptionValue builtIn="false" value="/usr/include/qt5"/>
+									<listOptionValue builtIn="false" value="/usr/include/qt5/QtNetwork"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1056773020" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TC_MESHSIM"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.886149871" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1209058658" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.1151578699" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.pic.600757384" name="Position Independent Code (-fPIC)" superClass="gnu.cpp.compiler.option.other.pic" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.other.other.1296867835" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1356722325" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.514716726" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.496000032" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="/usr/include/qt5"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1316163834" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TC_MESHSIM"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.756236659" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.346323556" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.848632351" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.pic.67929348" name="Position Independent Code (-fPIC)" superClass="gnu.c.compiler.option.misc.pic" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.526142094" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1232827206" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1898403624" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.paths.270665028" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths"/>
+								<option id="gnu.cpp.link.option.libs.273246542" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="Qt5Core"/>
+									<listOptionValue builtIn="false" value="Qt5Widgets"/>
+									<listOptionValue builtIn="false" value="Qt5Gui"/>
+									<listOptionValue builtIn="false" value="Qt5Network"/>
+								</option>
+								<option id="gnu.cpp.link.option.flags.341097677" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-m64 -pipe -std=c++11" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1586236380" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1098324557" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.1588745945" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/interfaces"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/desenet"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${ProjDirPath}/platform/linux-meshsim}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../desenet-common/platform/linux-meshsim&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.731419391" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="app"/>
+						<entry excluding="desenet/mischief|desenet/gateway" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="mdw"/>
+						<entry excluding="olimex-stm32f103-stk" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="platform"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="xf"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.305488281">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.305488281" moduleId="org.eclipse.cdt.core.settings" name="MeshSim - Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.305488281" name="MeshSim - Release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.305488281." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.226762137" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1171507307" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/desenet-sensor}/MeshSim - Release" id="cdt.managedbuild.target.gnu.builder.base.452640205" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.412522362" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.32261737" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.optimization.level.36026497" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.607146993" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1023251940" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="TC_MESHSIM"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.1449035520" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1390560230" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim/mcu"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim/board"/>
+									<listOptionValue builtIn="false" value="/usr/include/qt5"/>
+									<listOptionValue builtIn="false" value="/usr/include/qt5/QtNetwork"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.pic.1728911368" name="Position Independent Code (-fPIC)" superClass="gnu.cpp.compiler.option.other.pic" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.217438007" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.503361436" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.474261374" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.910846718" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.157782049" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="TC_MESHSIM"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.paths.1186521457" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/xf"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-sensor"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/mdw/desenet"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/platform-common/board"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../desenet-common/platform/linux-meshsim"/>
+									<listOptionValue builtIn="false" value="/usr/include/qt5"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.302153971" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1341648845" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.2113042854" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.libs.1772355732" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="Qt5Core"/>
+									<listOptionValue builtIn="false" value="Qt5Widgets"/>
+									<listOptionValue builtIn="false" value="Qt5Gui"/>
+									<listOptionValue builtIn="false" value="Qt5Network"/>
+								</option>
+								<option id="gnu.cpp.link.option.flags.1866555355" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-m64 -pipe -std=c++11" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1737422311" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1096800635" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1993350908" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="mdw/desenet/mischief|mdw/desenet/gateway|platform/olimex-stm32f103-stk" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="desenet-sensor.ilg.gnuarmeclipse.managedbuild.cross.target.elf.1227684281" name="Executable" projectType="ilg.gnuarmeclipse.managedbuild.cross.target.elf"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/desenet-sensor"/>
+		</configuration>
+		<configuration configurationName="Stm32 - Debug">
+			<resource resourceType="PROJECT" workspacePath="/desenet-sensor"/>
+		</configuration>
+		<configuration configurationName="MeshSim - Release"/>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/desenet-sensor"/>
+		</configuration>
+		<configuration configurationName="MeshSim - Debug">
+			<resource resourceType="PROJECT" workspacePath="/desenet-sensor"/>
+		</configuration>
+		<configuration configurationName="Stm32 - Release">
+			<resource resourceType="PROJECT" workspacePath="/desenet-sensor"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732.;cdt.managedbuild.tool.gnu.c.compiler.base.514716726;cdt.managedbuild.tool.gnu.c.compiler.input.526142094">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.712369777;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.653469606">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1229099314;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.203692929">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647.;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.1062248377;ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.1055248337">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.255758647.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.663878894;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1032865954">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1009729523.613485732.;cdt.managedbuild.tool.gnu.cpp.compiler.base.1588296631;cdt.managedbuild.tool.gnu.cpp.compiler.input.1356722325">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

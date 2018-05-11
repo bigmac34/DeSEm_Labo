@@ -1,0 +1,105 @@
+/**
+ * @page sec_faq Frequently asked Questions
+ *
+ * @section sec_faq Frequently asked Questions
+ *
+ * @subsection faq_general General
+ *
+ * **Q:** The DeseNet Sensor project is a large project. Could you tell me where to jump into the project?
+ *
+ * **A:** First you need to understand the specification of the network protocol. Then you can jump either
+ *    into reading the doxygen help of the sensor project or/and start examining the source files of
+ *    the project. You need to know how the AbstractApplication class works. The same for the NetworkEntity
+ *    and the Beacon class. Try to understand the code step by step. You are growing together with
+ *    the project!
+ *
+ * **Q:** The DeseNet Sensor project is too big for me. Could you tell me where is it best to start coding?
+ *
+ * **A:** Put a breakpoint into the AbstractApplication::svSyncRequest() method, compile the project. Start
+ *    and configure the MeshSimulator, start the TestBench. Then start debugging of your sensor
+ *    application. Because the AccelerometerApplication wants to get informed about arrival of beacons
+ *    from the TestBench, the debugger will stop on the breakpoint. Now you should add code to forward
+ *    the request to the NetworkEntiy, because the NetworkEntity handles all svSyncRequests().
+ *
+ * **Q:** When I compile for the Olimex target, the linker tells me that it has not enough Flash to put the
+ *    application in it. Why is my application/firmware file too big?
+ *
+ * **A:** You may use something from the STL library which makes your firmware file growing too much. If you
+ *    use for example the std::cout function from iostream, your file linked gets about 100kB bigger! The
+ *    MCU used has a flash size of 128kB. This means if you are using cout you have 28kB left for your
+ *    application! If this is the case get rid of all the couts and use printf instead.
+ *
+ * **Q:** I am not able to download the application and debug it.
+ *
+ * **A:** First verify that the Olimex board is powered up correctly. Jumper right on the AA battery holder.
+ *    The check the flat cable connections on the Universal Tracer. There should be 2 LEDs light up. One
+ *    showing the USB connection the other showing that the Olimex board is powered up correctly.
+ *    Maybe the MCU is in sleep mode... then ...   
+ *
+ * @subsection faq_code Code Related
+ *
+ * **Q:** Why does the static method NetworkEntity::instance() not create a new instance of NetworkEntity
+ * when it gets called the first time?
+ *
+ * **A:** In Embedded Systems it is often not allowed to call _malloc_ or _new_ because of the usage of a static
+ * memory model. So the instance() method cannot call the new function to create a new instance. 
+ * 
+ * In the DeseNet project we decided to let the developer choose where to create the instances for the single 
+ * objects. Most of the single instances are created using the Factory class. The NetworkEntity instance is
+ * created as attribute in the Net class. The Net class is also a Singleton and gets created in the Factory.
+ *
+ * This means the NetworkEntity instance will start to live as soon as the Net instance gets created.  
+ *
+ * **Q:** When I am calling the static method desenet::sensor::NetworkEntity::instance() the program stops 
+ * exection after the call of the assert() function. 
+ *
+ * **A:** If the program stops on an assert() function, the expression given as parameter results to _false_. 
+ * This causes the program to stop execution.
+ * 
+ * For the NetworkEntity::instance() method it means that at the time of the method call no instance of the
+ * class was created. This is typically the case when the methods NetworkEntity::instance() gets called prior
+ * to the execution of the code _net().initialize(__SLOT_NUMBER)_ which is called in 
+ * Factory::buildApplication().
+ *
+ * **Q:** Where is the single instance of NetworkEntity living? I did not find it in the Factory class!
+ *
+ * **A:** The NetworkEntity is part of the Net class and lives as attribute inside this class. The NetworkEntity
+ * instance gets created when the Net instance gets created. After the creation and intialization of the Net
+ * instance the NetworkEntity can be generally accessed from everywhere in the code using the 
+ * NetworkEntity::instance() method.
+ *
+ * @subsection faq_testbench TestBench Related
+ *
+ * **Q:** I cannot start the DeseNet TestBench application! What could be the problem? 
+ *
+ * **A:** A problem could be that IPv6 is enabled on the Ubunu installation. Try to disalbe IPv6 by adding
+ * the following lines to the /etc/sysctl.conf file:
+ * @code
+ *    net.ipv6.conf.all.disable_ipv6 = 1
+ *    net.ipv6.conf.default.disable_ipv6 = 1
+ *    net.ipv6.conf.lo.disable_ipv6 = 1
+ * @endcode
+ *
+ * reload sysctl by entering the following command in a terminal window:
+ * @verbatim $ sudo sysctl -p  @endverbatim
+ * IPv6 should now be disabled and the DeseNet TestBench application should start now. 
+ * 
+ * For more information on this topic see: 
+ * <a href="http://askubuntu.com/questions/440649/how-to-disable-ipv6-in-ubuntu-14-04">How to disable IPv6 in Ubuntu 14.04?</a>
+ *
+ * @subsection faq_debug Flash and Debug Related
+ *
+ * **Q:** When I try to download and debug the firmware for the Olimex board I get the following OpenOCD
+ * error:  
+ * @verbatim Error: unable to open ftdi device with vid 0403, pid cff8, description 'Amontec JTAGkey-2' and serial '*' @endverbatim
+ *
+ * **A:** Check if the _Universal Tracer_ is seen in your operating system. Open a terminal enter the following command
+ * @verbatim $ lsusb  @endverbatim
+ * to let the system output the names of the devices connected via USB.
+ * In this list you should find the following entry:
+ * @verbatim ID 0403:cff8 Future Technology Devices International, Ltd Amontec JTAGkey @endverbatim
+ * This entry shows the presens of the _Universal Tracer_. 
+ *
+ * If this entry is not there the device was probably connected to you host operating system. In this case you need
+ * to tell you virtual machine client (VMWare, etc.) to connect the USB device to the virtual machine running Ubuntu. 
+ */

@@ -1,0 +1,45 @@
+/**
+ * @mainpage
+ * 
+ * Welcome to the DeSEm master course practical work. 
+ * 
+ * This documentation should help you during analysis, design, implementation and test of your DeseNet protocol stack.
+ * 
+ * If you have sugestions, comments, questions or you found an error inside the documentation, please write an email to 
+ * <a href="mailto:michael.clausen@hevs.ch">michael.clausen@hevs.ch</a>. So we can help you or update the documentation
+ * to remote the errors.
+ * 
+ * Here we have some introductions in order to start developping:
+ * - @subpage devenv
+ * - @subpage architecture
+ * - @subpage meshsimsettings
+ * - @subpage sec_faq
+ * 
+ * In addition to this, we provide some interesting links to sites that might help you during the project:
+ * 
+ * - <a href="http://cplusplus.com/reference/">www.cplusplus.com</a> - Very complete C++ online reference.
+ * - <a href="http://www.mochima.com/tutorials/STL.html">www.mochima.com</a> - C++ STL (Standard Templates Library) introduction.
+ * - <a href="http://en.wikibooks.org/wiki/More_C%2B%2B_Idioms">C++ Idioms on Wikibooks.org</a> - Very good open book and resources about common used C++ idioms.
+ * 
+ * @section Eclipse Project structure.
+ * The different folders of the Eclipse project contain the following:
+ * 
+ * - app: Contains the DeseNet applications and the main file (main.cpp) 
+ * - mdw: Contains middleware (MDW) packages:
+ *   + clockwork: Classes for maintaining time
+ *   + containers: Container classes to store and handle data
+ *   + desent: Desent network protocol classes 
+ *   + gui: Platform independent graphical classes
+ *   + pool: Contains static object pool class to omit usage of heap
+ *   + trace: Package to output message text via UART, USB or other peripherals
+ * - platform:
+ *   This projects supports multiple platforms. One is the real hardware and one 
+ *   represents a simulation environment simulating the hardware and the network communication.
+ *   + olimex-stm32f103-stk: Represents the real hardware, hence the Olimex Stm32 development board.
+ *   + linux-meshsim: Represents the simulation environment using the MeshSimulator.
+ *   + platform-common: Contains packages and files which are common for all platforms.
+ * - xf: Contains the sources of the XF (eXecution Framework).
+ * 
+ * The file main.cpp contains the common bootstrap code for the embedded ARM version and the simulated desktop version.
+ *
+ */
