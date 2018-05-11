@@ -20,6 +20,7 @@ void AbstractApplication::svSyncRequest()
 
 bool AbstractApplication::svPublishRequest(SvGroup group)
 {
+	NetworkEntity::instance().svPublishRequest(this, group);
 	return false;
 }
 
@@ -32,7 +33,7 @@ void AbstractApplication::evPublishRequest(EvId id, const SharedByteBuffer & evD
  */
 void AbstractApplication::svSyncIndication(desenet::NetworkTime)
 {
-
+	// Appeler pour faire la mesure
 }
 
 /**

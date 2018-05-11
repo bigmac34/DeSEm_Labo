@@ -21,7 +21,7 @@ class Net;
 /**
  * @brief Implements the desenet protocol on the network layer.
  */
-class NetworkEntity
+class NetworkEntity : public ITimeSlotManager::Observer
 {
 	friend class AbstractApplication;
 	friend class Net;
@@ -34,6 +34,9 @@ public:
 	void initializeRelations(ITimeSlotManager & timeSlotManager, NetworkInterfaceDriver & transceiver);		///< Initializes all relations needed by the instance.
 
 	static NetworkEntity & instance();																		///< Returns reference to single instance.
+
+	// Pour l'adservateur
+	virtual void onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal) = 0;
 
 protected:
 	/**
@@ -73,6 +76,8 @@ protected:
 private:
 	void svSyncRequest(AbstractApplication*);
 	ApplicationSyncList syncApps;
+
+	void svPublishRequest(AbstractApplication*, SvGroup group);
 };
 
 } // sensor

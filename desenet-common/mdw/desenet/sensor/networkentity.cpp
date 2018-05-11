@@ -72,11 +72,39 @@ void NetworkEntity::onReceive(NetworkInterfaceDriver & driver, const uint32_t re
 	Factory::instance().ledController().flashLed(0);
 
 	// TODO: Add your code here
+	// Test la validité de la frame
+	if(frame.isValid())
+	{
+		// Test sur la frame est un Beacon
+		if(frame.type() == FrameType::Beacon)
+		{
+			// Synchronisation de toutes les app inscrites
+		    for(ApplicationSyncList::iterator itApp = syncApps.begin(); itApp!=syncApps.end(); ++itApp)
+		    {
+		    	// Indication à l'AbstractApplication de faire la mesure
+		    	(*itApp)->svSyncIndication(receptionTime);
 
+		    	// Lancer les timing
+		    	_pTimeSlotManager->onBeaconReceived(receptionTime);
+		    	// encore des trucs a faire mais pas encore compris
+
+		    }
+		}
+	}
 
 }
 
 void NetworkEntity::svSyncRequest(AbstractApplication* theApp)
 {
 	syncApps.push_front(theApp);
+}
+
+void NetworkEntity::svPublishRequest(AbstractApplication* theApp, SvGroup group)
+{
+	// A completer pour le sampled values publishing
+}
+
+void NetworkEntity::onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal)
+{
+	// A compléter mais pas sur que c'est la bonnne fonction par rapport a l'observateur
 }
