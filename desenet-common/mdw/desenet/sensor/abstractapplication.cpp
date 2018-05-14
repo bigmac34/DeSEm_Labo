@@ -20,8 +20,9 @@ void AbstractApplication::svSyncRequest()
 
 bool AbstractApplication::svPublishRequest(SvGroup group)
 {
+	bool retVal = false;
 	NetworkEntity::instance().svPublishRequest(this, group);
-	return false;
+	return retVal;
 }
 
 void AbstractApplication::evPublishRequest(EvId id, const SharedByteBuffer & evData)

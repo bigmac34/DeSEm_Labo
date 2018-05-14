@@ -90,6 +90,8 @@ app/factory.d: ../app/factory.cpp \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/sensor/networkentity.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/networkinterfacedriver.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/accelerometerapplication.h \
@@ -333,6 +335,10 @@ app/factory.d: ../app/factory.cpp \
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/networkinterfacedriver.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h:
 

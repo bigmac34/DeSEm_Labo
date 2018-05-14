@@ -8,6 +8,7 @@
 #include "desenet/desenet.h"
 #include "desenet/networkinterfacedriver.h"
 #include "itimeslotmanager.h"
+#include "desenet/MultiPDU.h"
 
 using desenet::NetworkInterfaceDriver;
 using namespace desenet;
@@ -36,7 +37,7 @@ public:
 	static NetworkEntity & instance();																		///< Returns reference to single instance.
 
 	// Pour l'adservateur
-	virtual void onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal) = 0;
+	virtual void onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal);
 
 protected:
 	/**
@@ -77,7 +78,11 @@ private:
 	void svSyncRequest(AbstractApplication*);
 	ApplicationSyncList syncApps;
 
-	void svPublishRequest(AbstractApplication*, SvGroup group);
+	bool svPublishRequest(AbstractApplication*, SvGroup group);
+	ApplicationPublishersArray pub;
+
+private:
+    MultiPDU mpdu;
 };
 
 } // sensor

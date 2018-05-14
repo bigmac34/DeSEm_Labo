@@ -45,6 +45,14 @@ void NetworkEntity::initializeRelations(ITimeSlotManager & timeSlotManager, Netw
 	_pTimeSlotManager = &timeSlotManager;
     _pTransceiver = &transceiver;
 
+    _pTimeSlotManager->setObserver(*this);
+
+    // initialisation des publishRequest
+    for (int group=0; group<16; ++group)
+    {
+    	pub[group] = nullptr;
+    }
+
      // Set the receive callback between transceiver and network. Bind this pointer to member function
     transceiver.setReceptionHandler(std::bind(&NetworkEntity::onReceive, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4));
 }
@@ -78,20 +86,35 @@ void NetworkEntity::onReceive(NetworkInterfaceDriver & driver, const uint32_t re
 		// Test sur la frame est un Beacon
 		if(frame.type() == FrameType::Beacon)
 		{
+			Beacon beacon(frame);
+
+			SharedByteBuffer data(20);		//
+			SharedByteBuffer::sizeType size;	//
+
+			// Lancer les timing
+			_pTimeSlotManager->onBeaconReceived(beacon.slotDuration());
+
 			// Synchronisation de toutes les app inscrites
 		    for(ApplicationSyncList::iterator itApp = syncApps.begin(); itApp!=syncApps.end(); ++itApp)
 		    {
 		    	// Indication à l'AbstractApplication de faire la mesure
-		    	(*itApp)->svSyncIndication(receptionTime);
+		    	(*itApp)->svSyncIndication(beacon.networkTime());
 
-		    	// Lancer les timing
-		    	_pTimeSlotManager->onBeaconReceived(receptionTime);
-		    	// encore des trucs a faire mais pas encore compris
+		    }
 
+		    // Demande des valeurs
+		    for(ApplicationSyncList::iterator itApp = syncApps.begin(); itApp!=syncApps.end(); ++itApp)
+		    {
+		    	size = (*itApp)->svPublishIndication(SVGROUP_ACCELEROMETER, data);
+
+		    	// Creation SV PDU
+		    	if(mpdu.addSVePDU(SVGROUP_ACCELEROMETER, &data, size)) // group
+		    	{
+		    		mpdu.increPDUCount();
+		    	}
 		    }
 		}
 	}
-
 }
 
 void NetworkEntity::svSyncRequest(AbstractApplication* theApp)
@@ -99,12 +122,46 @@ void NetworkEntity::svSyncRequest(AbstractApplication* theApp)
 	syncApps.push_front(theApp);
 }
 
-void NetworkEntity::svPublishRequest(AbstractApplication* theApp, SvGroup group)
+bool NetworkEntity::svPublishRequest(AbstractApplication* theApp, SvGroup group)
 {
-	// A completer pour le sampled values publishing
+	bool valRet = false;
+	if(pub[group] == nullptr)
+	{
+		valRet = true;
+		pub[group] = theApp;
+		Trace::outln("-- svPublishRequest -- : %x", theApp);
+		Trace::outln("-- AppGroup -- : %d", group);
+	}
+	return valRet;
 }
 
 void NetworkEntity::onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal)
 {
-	// A compléter mais pas sur que c'est la bonnne fonction par rapport a l'observateur
+
+	switch ( signal ) {
+	case ITimeSlotManager::SIG::CYCLE_START:
+		//Trace::outln("-- CYCLE_START -- ");
+	  // Code
+	  break;
+	case ITimeSlotManager::SIG::CYCLE_FINISH:
+		//Trace::outln("-- CYCLE_FINISH -- ");
+	  // Code
+	  break;
+	case ITimeSlotManager::SIG::OWN_SLOT_START:
+		//Trace::outln("-- OWN_SLOT_START -- ");
+
+		//_pTransceiver->transmit(mpdu.,mpdu.length());
+		Trace::outln(mpdu.toString());
+		*_pTransceiver << mpdu;
+		mpdu.reset();
+	  // Code
+	  break;
+	case ITimeSlotManager::SIG::OWN_SLOT_FINISH:
+		//Trace::outln("-- OWN_SLOT_FINISH -- ");
+	  // Code
+	  break;
+	default:
+	  // Code
+	  break;
+	}
 }

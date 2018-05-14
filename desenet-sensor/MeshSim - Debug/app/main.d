@@ -60,6 +60,8 @@ app/main.d: ../app/main.cpp \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/sensor/networkentity.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/networkinterfacedriver.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/platform-common/board/interfaces/imonochromedisplay.h \
@@ -228,6 +230,10 @@ app/main.d: ../app/main.cpp \
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/networkinterfacedriver.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h:
 

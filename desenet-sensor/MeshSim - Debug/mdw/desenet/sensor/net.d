@@ -14,6 +14,8 @@ mdw/desenet/sensor/net.d: \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/sensor/networkentity.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/networkinterfacedriver.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h \
  /usr/include/qt5/QtCore/QObject /usr/include/qt5/QtCore/qobject.h \
  /usr/include/qt5/QtCore/qobjectdefs.h \
@@ -69,6 +71,10 @@ mdw/desenet/sensor/net.d: \
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/networkinterfacedriver.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h:
 
