@@ -91,7 +91,7 @@ void NetworkEntity::onReceive(NetworkInterfaceDriver & driver, const uint32_t re
 			Trace::outln(frame.toString());
 
 			SharedByteBuffer buffer(7);		//
-			SharedByteBuffer::sizeType size;	//
+			uint8_t size;	//
 
 			// Lancer les timing
 			_pTimeSlotManager->onBeaconReceived(beacon.slotDuration());
@@ -133,36 +133,43 @@ bool NetworkEntity::svPublishRequest(AbstractApplication* theApp, SvGroup group)
 	}
 	return valRet;
 }
+// Add event to the list of that
+void NetworkEntity::evPublishRequest(EvId id, SharedByteBuffer & evData)
+{
+	EventElement	eventElement(id, evData);
+	events.push_back(eventElement);
+}
 
 void NetworkEntity::onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal)
 {
 
 	switch ( signal ) {
 	case ITimeSlotManager::SIG::CYCLE_START:
-		//Trace::outln("-- CYCLE_START -- ");
-	  // Code
 	  break;
 	case ITimeSlotManager::SIG::CYCLE_FINISH:
-		//Trace::outln("-- CYCLE_FINISH -- ");
-	  // Code
 	  break;
 	case ITimeSlotManager::SIG::OWN_SLOT_START:
-		//Trace::outln("-- OWN_SLOT_START -- ");
 
-		//_pTransceiver->transmit(mpdu.,mpdu.length());
+		 for(EventElementList::iterator itEvent = events.begin(); itEvent!=events.end(); ++itEvent)
+		{
+			// Creation EV PDU
+			mpdu.addEVePDU((*itEvent).id,&(*itEvent).data, (*itEvent).data.length()); // group
+		}
+		events.clear();
+
+		// Sample Values
 		mpdu.truncate();
 		Trace::outln(mpdu.toString());
 		*_pTransceiver << mpdu;
 		//mpdu.truncate();
 		mpdu.reset();
-	  // Code
+
+		// Events
+
 	  break;
 	case ITimeSlotManager::SIG::OWN_SLOT_FINISH:
-		//Trace::outln("-- OWN_SLOT_FINISH -- ");
-	  // Code
 	  break;
 	default:
-	  // Code
 	  break;
 	}
 }

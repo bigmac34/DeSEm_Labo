@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../app/JoystickApplication.cpp \
 ../app/accelerometerapplication.cpp \
 ../app/factory.cpp \
 ../app/main.cpp 
 
 OBJS += \
+./app/JoystickApplication.o \
 ./app/accelerometerapplication.o \
 ./app/factory.o \
 ./app/main.o 
 
 CPP_DEPS += \
+./app/JoystickApplication.d \
 ./app/accelerometerapplication.d \
 ./app/factory.d \
 ./app/main.d 

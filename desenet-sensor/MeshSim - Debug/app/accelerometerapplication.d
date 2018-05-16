@@ -74,6 +74,10 @@ app/accelerometerapplication.d: ../app/accelerometerapplication.cpp \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/accel/accelerometer.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/clockwork.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/ttime.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/joystick.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/platform-common/board/interfaces/ijoystick.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/joystickapplication.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/../../desenet-common/platform/platform-common/board/interfaces/ijoystickobserver.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/xf/xfevent.h \
  ../app/accelerometerapplication.h
 
@@ -260,6 +264,14 @@ app/accelerometerapplication.d: ../app/accelerometerapplication.cpp \
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/clockwork.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/ttime.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/joystick.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/platform-common/board/interfaces/ijoystick.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/joystickapplication.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/../../desenet-common/platform/platform-common/board/interfaces/ijoystickobserver.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/xf/xfevent.h:
 

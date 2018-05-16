@@ -45,12 +45,12 @@ protected:
 	 */
     struct EventElement
     {
-        EventElement(EvId id, const SharedByteBuffer & data)
+        EventElement(EvId id, SharedByteBuffer & data)
          : id(id), data(data)
         {}
 
         EvId id;						///< Event identifier (ex. EVID_JOYSTICK).
-        const SharedByteBuffer data;	///< Data that goes together with the event.
+        SharedByteBuffer data;	///< Data that goes together with the event.
     };
 
 	// desenet::NetworkInterfaceDriver::Callback callback
@@ -80,6 +80,9 @@ private:
 
 	bool svPublishRequest(AbstractApplication*, SvGroup group);
 	ApplicationPublishersArray pub;
+
+	void evPublishRequest(EvId id,SharedByteBuffer & evData);
+	EventElementList events;
 
 private:
     MultiPDU mpdu;

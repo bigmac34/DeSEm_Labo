@@ -9,6 +9,9 @@
 #include "board/accel/accelerometer.h"
 #include "clockwork/clockwork.h"
 
+#include "board/joystick.h"
+#include "app/joystickapplication.h"
+
 using desenet::sensor::Net;
 
 #ifdef TC_MESHSIM

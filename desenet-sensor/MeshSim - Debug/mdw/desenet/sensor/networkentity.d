@@ -78,6 +78,10 @@ mdw/desenet/sensor/networkentity.d: \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/accel/accelerometer.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/clockwork.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/ttime.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/joystick.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/platform-common/board/interfaces/ijoystick.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/joystickapplication.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/../../desenet-common/platform/platform-common/board/interfaces/ijoystickobserver.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-common/mdw/desenet/sensor/networkentity.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/ledcontroller.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/platform-common/board/ledflasher.h
@@ -271,6 +275,14 @@ mdw/desenet/sensor/networkentity.d: \
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/clockwork.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/ttime.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/joystick.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/platform-common/board/interfaces/ijoystick.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/joystickapplication.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/../../desenet-common/platform/platform-common/board/interfaces/ijoystickobserver.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-common/mdw/desenet/sensor/networkentity.h:
 

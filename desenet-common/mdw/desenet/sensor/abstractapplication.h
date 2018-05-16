@@ -51,7 +51,16 @@ namespace sensor {
          * @param id        ID of the event.
          * @param evData    The actual data of the event.
          */
-        static void evPublishRequest(EvId id, const SharedByteBuffer & evData);
+        static void evPublishRequest(EvId id, SharedByteBuffer & evData);
+
+        /**
+         * @brief Subscribe the given event.
+         *
+         * Note that the shared buffer given to the stack will be copied.
+         *
+         * @param id        ID of the event.
+         */
+        static void evSubscribeRequest(EvId id);
 
     private:
         /**

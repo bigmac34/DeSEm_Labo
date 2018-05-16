@@ -25,8 +25,15 @@ bool AbstractApplication::svPublishRequest(SvGroup group)
 	return retVal;
 }
 
-void AbstractApplication::evPublishRequest(EvId id, const SharedByteBuffer & evData)
+void AbstractApplication::evPublishRequest(EvId id, SharedByteBuffer & evData)
 {
+	NetworkEntity::instance().evPublishRequest(id, evData);
+}
+
+// Pour convenir à la page 8
+static void AbstractApplication::evSubscribeRequest(EvId id)
+{
+
 }
 
 /**
