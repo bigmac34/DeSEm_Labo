@@ -88,7 +88,9 @@ void NetworkEntity::onReceive(NetworkInterfaceDriver & driver, const uint32_t re
 		{
 			Beacon beacon(frame);
 
-			SharedByteBuffer data(20);		//
+			Trace::outln(frame.toString());
+
+			SharedByteBuffer buffer(7);		//
 			SharedByteBuffer::sizeType size;	//
 
 			// Lancer les timing
@@ -105,13 +107,10 @@ void NetworkEntity::onReceive(NetworkInterfaceDriver & driver, const uint32_t re
 		    // Demande des valeurs
 		    for(ApplicationSyncList::iterator itApp = syncApps.begin(); itApp!=syncApps.end(); ++itApp)
 		    {
-		    	size = (*itApp)->svPublishIndication(SVGROUP_ACCELEROMETER, data);
+		    	size = (*itApp)->svPublishIndication(SVGROUP_ACCELEROMETER, buffer);
 
 		    	// Creation SV PDU
-		    	if(mpdu.addSVePDU(SVGROUP_ACCELEROMETER, &data, size)) // group
-		    	{
-		    		mpdu.increPDUCount();
-		    	}
+		    	mpdu.addSVePDU(SVGROUP_ACCELEROMETER, &buffer, size); // group
 		    }
 		}
 	}
@@ -151,8 +150,10 @@ void NetworkEntity::onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, c
 		//Trace::outln("-- OWN_SLOT_START -- ");
 
 		//_pTransceiver->transmit(mpdu.,mpdu.length());
+		mpdu.truncate();
 		Trace::outln(mpdu.toString());
 		*_pTransceiver << mpdu;
+		//mpdu.truncate();
 		mpdu.reset();
 	  // Code
 	  break;
