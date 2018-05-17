@@ -36,7 +36,7 @@ public:
 
 	static NetworkEntity & instance();																		///< Returns reference to single instance.
 
-	// Pour l'adservateur
+	// Pour l'observateur
 	virtual void onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal);
 
 protected:
@@ -76,15 +76,13 @@ protected:
 
 private:
 	void svSyncRequest(AbstractApplication*);
-	ApplicationSyncList syncApps;
-
 	bool svPublishRequest(AbstractApplication*, SvGroup group);
-	ApplicationPublishersArray pub;
-
 	void evPublishRequest(EvId id,SharedByteBuffer & evData);
-	EventElementList events;
 
-private:
+	ApplicationSyncList syncApps;		// Liste des applications inscrite pour la synchronisation
+	ApplicationPublishersArray pub;		// Liste des applicaitons
+	EventElementList events;			// Liste des évenements
+
     MultiPDU mpdu;
 };
 

@@ -31,10 +31,10 @@ void AbstractApplication::evPublishRequest(EvId id, SharedByteBuffer & evData)
 }
 
 // Pour convenir à la page 8
-static void AbstractApplication::evSubscribeRequest(EvId id)
+/*void AbstractApplication::evSubscribeRequest(EvId id)
 {
 
-}
+}*/
 
 /**
  * Default callback method for syncs

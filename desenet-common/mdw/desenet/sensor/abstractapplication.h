@@ -60,7 +60,7 @@ namespace sensor {
          *
          * @param id        ID of the event.
          */
-        static void evSubscribeRequest(EvId id);
+       // static void evSubscribeRequest(EvId id);
 
     private:
         /**

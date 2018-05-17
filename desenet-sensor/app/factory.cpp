@@ -71,10 +71,6 @@ void Factory::buildApplication()
 	//
 	// Initialize relations
 	//
-	Joystick::instance().initialize();					// Instance Joystick
-	app::JoystickApplication::instance().initialize();
-
-	Joystick::instance().setObserver(& app::JoystickApplication::instance()); // Init Relation
 	app::JoystickApplication::instance().initializeRelations(& Joystick::instance());
 
 
