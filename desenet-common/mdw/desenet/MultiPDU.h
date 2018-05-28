@@ -99,11 +99,17 @@ public:
 
     /**
      * @brief reset mpdu
-     *
      */
     void reset();
 
+    /**
+     * @brief truncate the mpdu frame
+     */
     void truncate();
+
+    /**
+     * @brief detruncate the mpdu frame
+     */
     void detruncate();
 
 private:

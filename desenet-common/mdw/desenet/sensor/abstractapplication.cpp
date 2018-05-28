@@ -30,18 +30,11 @@ void AbstractApplication::evPublishRequest(EvId id, SharedByteBuffer & evData)
 	NetworkEntity::instance().evPublishRequest(id, evData);
 }
 
-// Pour convenir à la page 8
-/*void AbstractApplication::evSubscribeRequest(EvId id)
-{
-
-}*/
-
 /**
  * Default callback method for syncs
  */
 void AbstractApplication::svSyncIndication(desenet::NetworkTime)
 {
-	// Appeler pour faire la mesure
 }
 
 /**

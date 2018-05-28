@@ -12,14 +12,16 @@ using std::memcpy;
 using std::memset;
 using std::bitset;
 
+extern desenet::SlotNumber __SLOT_NUMBER;
+
 namespace desenet
 {
 	MultiPDU::MultiPDU() : Frame(MultiPDU::SIZE)
 	{
-		memset(buffer() + HEADER_SIZE, 0, 1);	// Mise à zero du 1er byte
-	    setDestination(GATEWAY_ADDRESS);		// Adresse
+		memset(buffer() + HEADER_SIZE, 0, 1);	// Reset first byte
+	    setDestination(GATEWAY_ADDRESS);		// Set Address
 
-		MultiPDU::reset();						// Nettoyage de la trame
+		MultiPDU::reset();						// Reset the trame
 	}
 
 	MultiPDU::MultiPDU(const Frame & frame) : Frame(frame)
@@ -51,23 +53,23 @@ namespace desenet
 
     	if(HEADER_SIZE + offset + length + FOOTER_SIZE <= SIZE)
     	{
-    		// Incrementation du compteur de ePDU
+    		// Increment the ePDU counter
     		ePDUCount++;
 
-    		// Création de l'header ePDU
+    		// Create the ePDU header
     		HEADER_EPDU header;
     		header.length = length;		// length (bits 0-2)
     		header.sVGroup = svGroup;	// svGroup (bits 3-6)
     		header.ePDUType = 0;		// ePDU Type = 0 (bit 7)
 
-			// Mise à jour du counter d'ePDU
+			// Refresh ePDU counter
 			memcpy(buffer() + HEADER_SIZE + 1, &ePDUCount, sizeof(ePDUCount));
 
-    		// Ajout de l'header et des datas à la trame
+    		// Add header and data to the frame
     	    memcpy(buffer() + HEADER_SIZE + 2 + offset, &header, sizeof(header));
     	    memcpy(buffer() + HEADER_SIZE + 2 + offset + 1, sharedBuffer->data(), length); // sizeof(data)
 
-    	    // Incrementation de l'offset
+    	    // Increment the offset
     	    offset += length + 1;
 
     	    valRet = true;
@@ -81,23 +83,23 @@ namespace desenet
 
     	if(HEADER_SIZE + offset + length + FOOTER_SIZE <= SIZE)
     	{
-    		// Incrementation du compteur de ePDU
+    		// Increment the ePDU counter
     		ePDUCount++;
 
-    		// Creation de l'header
+    		// Create the header
 			HEADER_EPDU header;
 			header.length = length;		// length (bits 0-2)
 			header.sVGroup = evid;		// svGrevidoup (bits 3-6)
 			header.ePDUType = 1;		// ePDU Type = 1 (bit 7)
 
-			// Mise à jour du counter d'ePDU
+			// Refresh ePDU counter
 			memcpy(buffer() + HEADER_SIZE + 1, &ePDUCount, sizeof(ePDUCount));
 
-    		// Ajout de l'header et des datas à la trame
+    		// Add header and data to the frame
     	    memcpy(buffer() + HEADER_SIZE + 2 + offset, &header, sizeof(header));
     	    memcpy(buffer() + HEADER_SIZE + 2 + offset + 1, event, length);
 
-    	    // Incrementation de l'offset
+    	    // Increment offset
     	    offset += length + 1;
 
     	    valRet =  true;
@@ -119,19 +121,18 @@ namespace desenet
     {
     	uint8_t empty = 0;
 
-    	// Remise de la trame à sa taille maximale
+    	// Expend frame to the maximum size
     	detruncate();
 
-    	// Mise à 0 de tout les champs après le header
+    	// Reset all the header
     	for(int i = 0; i < 32; ++i)
     	{
     		memcpy(buffer() + HEADER_SIZE + i, &empty, sizeof(empty));
     	}
 
-    	// Initialisation du début de la trame
+    	// Initialize the begin of the frame
     	setDestination(GATEWAY_ADDRESS);
-    	//setSensorID(DESENET_SLOT_NUMBER);
-    	setSensorID(1);
+    	setSensorID(__SLOT_NUMBER);
     	setType(FrameType::MPDU);
     	setOffset(0);
     	ePDUCount = 0;

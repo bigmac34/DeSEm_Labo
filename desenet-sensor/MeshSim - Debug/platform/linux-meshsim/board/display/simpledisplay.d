@@ -69,6 +69,8 @@ platform/linux-meshsim/board/display/simpledisplay.d: \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/sensor/networkentity.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/networkinterfacedriver.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h \
  /usr/include/qt5/QtCore/QObject /usr/include/qt5/QtCore/qobject.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h \
@@ -94,6 +96,9 @@ platform/linux-meshsim/board/display/simpledisplay.d: \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/accel/accelerometer.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/clockwork.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/ttime.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/joystick.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/joystickapplication.h \
+ /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/../../desenet-common/platform/platform-common/board/interfaces/ijoystickobserver.h \
  /mnt/hgfs/DeSEm/desenet-work/desenet-common/platform/linux-meshsim/board/display/simpledisplay.h
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/gui/MonochromeDisplayPainter:
@@ -286,6 +291,10 @@ platform/linux-meshsim/board/display/simpledisplay.d: \
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/itimeslotmanager.h:
 
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/MultiPDU.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/desenet/frame.h:
+
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/mcu/hal/timeslotmanager.h:
 
 /usr/include/qt5/QtCore/QObject:
@@ -341,5 +350,11 @@ platform/linux-meshsim/board/display/simpledisplay.d: \
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/clockwork.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/mdw/clockwork/ttime.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-common/platform/linux-meshsim/board/joystick.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/joystickapplication.h:
+
+/mnt/hgfs/DeSEm/desenet-work/desenet-sensor/../desenet-sensor/app/../../desenet-common/platform/platform-common/board/interfaces/ijoystickobserver.h:
 
 /mnt/hgfs/DeSEm/desenet-work/desenet-common/platform/linux-meshsim/board/display/simpledisplay.h:

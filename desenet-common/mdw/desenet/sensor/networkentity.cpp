@@ -47,10 +47,10 @@ void NetworkEntity::initializeRelations(ITimeSlotManager & timeSlotManager, Netw
 
     _pTimeSlotManager->setObserver(*this);
 
-    // initialisation des publishRequest
+    // Initialize the publishRequest
     for (int group=0; group<16; ++group)
     {
-    	pub[group] = nullptr;
+    	pubApps[group] = nullptr;
     }
 
      // Set the receive callback between transceiver and network. Bind this pointer to member function
@@ -79,43 +79,42 @@ void NetworkEntity::onReceive(NetworkInterfaceDriver & driver, const uint32_t re
 
 	Factory::instance().ledController().flashLed(0);
 
-	// TODO: Add your code here
-	// Test la validité de la frame
+	// Test of the frame validity
 	if(frame.isValid())
 	{
-		// Test si la frame est un Beacon
+		// Test if the frame is a Beacon
 		if(frame.type() == FrameType::Beacon)
 		{
 			Beacon beacon(frame);
 
-			SharedByteBuffer buffer(7);		// 8 bytes: taille maximale d'un données
+			SharedByteBuffer buffer(7);		// 8 bytes: Maximum size of the data
 			uint8_t size;
 
-			// Lancer les timing
+			// Start the timing
 			_pTimeSlotManager->onBeaconReceived(beacon.slotDuration());
 
-			// Synchronisation de toutes les applications inscrites
+			// Synchronization of all registered applications
 		    for(ApplicationSyncList::iterator itApp = syncApps.begin(); itApp!=syncApps.end(); ++itApp)
 		    {
-		    	// Indication à l'AbstractApplication de faire la mesure
+		    	// Indication to the AbstractApplication to make the measurement
 		    	(*itApp)->svSyncIndication(beacon.networkTime());
 
 		    }
 
-		    // Demande des valeurs à tout les applications inscrites
+		    // Requesting values to all registered applications
 		    for(ApplicationSyncList::iterator itApp = syncApps.begin(); itApp!=syncApps.end(); ++itApp)
 		    {
 		    	size = (*itApp)->svPublishIndication(SVGROUP_ACCELEROMETER, buffer);
 
-		    	// Creation SV PDU
-		    	mpdu.addSVePDU(SVGROUP_ACCELEROMETER, &buffer, size); // group
+		    	// Add SV PDU to the frame
+		    	mpdu.addSVePDU(SVGROUP_ACCELEROMETER, &buffer, size);
 		    }
 		}
 	}
 }
 
 /*
- * Inscription de applications
+ * Application Registration
  */
 void NetworkEntity::svSyncRequest(AbstractApplication* theApp)
 {
@@ -123,32 +122,33 @@ void NetworkEntity::svSyncRequest(AbstractApplication* theApp)
 }
 
 /*
- * Demande de permission pour la publication de données
+ * Request for permission to publish data
  */
 bool NetworkEntity::svPublishRequest(AbstractApplication* theApp, SvGroup group)
 {
 	bool valRet = false;
-	if(pub[group] == nullptr)
+	// Test if the group is free for registration
+	if(pubApps[group] == nullptr)
 	{
 		valRet = true;
-		pub[group] = theApp;
+		pubApps[group] = theApp;
 	}
 	return valRet;
 }
 
 /*
- * Ajout des events à la liste
+ * Add event to the list of events
  */
 void NetworkEntity::evPublishRequest(EvId id, SharedByteBuffer & evData)
 {
 	EventElement	eventElement(id, evData);
-	// Utilisation de Push_back pour que si le joystick et appuyé puis relaché en moins d'un cycle time
-	// 	le relachement soit pris en compte après l'appui.
+	// Using Push_back so that if the joystick and pressed and released in less than one cycle time
+	// the release is taken into account after the press.
 	events.push_back(eventElement);
 }
 
 /*
- * Gestion des timings
+ * Timings management
  */
 void NetworkEntity::onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, const ITimeSlotManager::SIG & signal)
 {
@@ -157,21 +157,21 @@ void NetworkEntity::onTimeSlotSignal(const ITimeSlotManager & timeSlotManager, c
 	  break;
 	case ITimeSlotManager::SIG::CYCLE_FINISH:
 	  break;
-	// Quand les MulitPDU peuvent être envoyé
+	// When MulitPDUs can be sent
 	case ITimeSlotManager::SIG::OWN_SLOT_START:
 
-		// Parcourir la list des events
+		// Browse the list of events
 		for(EventElementList::iterator itEvent = events.begin(); itEvent!=events.end(); ++itEvent)
 		{
-			// Ajout des EV PDU à la trame MultiPDU
+			// Adding EV PDUs to the MultiPDU Frame
 			mpdu.addEVePDU((*itEvent).id,&(*itEvent).data, (*itEvent).data.length()); // group
 		}
 
-		events.clear();				// Vider la liste des events
-		mpdu.truncate();			// Raccourcir la trame MultiPDU
+		events.clear();				// Empty the list of events
+		mpdu.truncate();			// Shorten the MultiPDU frame
 		//Trace::outln(mpdu.toString());
-		*_pTransceiver << mpdu;		// Envoie de la trame
-		mpdu.reset();				// Nettoyage de la trame
+		*_pTransceiver << mpdu;		// Send the frame
+		mpdu.reset();				// Cleaning the frame
 
 	  break;
 	case ITimeSlotManager::SIG::OWN_SLOT_FINISH:

@@ -53,15 +53,6 @@ namespace sensor {
          */
         static void evPublishRequest(EvId id, SharedByteBuffer & evData);
 
-        /**
-         * @brief Subscribe the given event.
-         *
-         * Note that the shared buffer given to the stack will be copied.
-         *
-         * @param id        ID of the event.
-         */
-       // static void evSubscribeRequest(EvId id);
-
     private:
         /**
          * @brief This method will be called every time a Beacon frame has been received from the Master Node.

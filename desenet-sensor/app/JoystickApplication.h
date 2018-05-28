@@ -17,22 +17,20 @@ class JoystickApplication : public desenet::sensor::AbstractApplication,
 							public IJoystickObserver
 {
 public:
-	// Initialisation de la Callback Interface
+	// Initializing the Callback Interface
 	void initializeRelations(IJoystick * joystick);
 
-	// Initialisation de l'instance
+	// Initializing the instance
 	static JoystickApplication & instance();
-
-protected:
-	// ID du Joystick
-	const desenet::SvGroup JOYSTICK_ID = EVID_JOYSTICK;
+	void initialize();
+	void start();
 
 private:
 	// Callback Interface Pattern
 	IJoystick* pJoystick;
 	void onPositionChange( IJoystick::Position position );
 
-	// Singelton Pattern (empèche la création de plusieurs instances)
+	// Singelton Pattern (prevents creation of multiple instances)
 	JoystickApplication();
 	JoystickApplication(const JoystickApplication&);
 	void operator=(const JoystickApplication&);

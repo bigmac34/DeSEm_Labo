@@ -72,7 +72,7 @@ void Factory::buildApplication()
 	// Initialize relations
 	//
 	app::JoystickApplication::instance().initializeRelations(& Joystick::instance());
-
+	app::JoystickApplication::instance().initialize();
 
 	// Draw Title on display
 	display().clear();
@@ -87,6 +87,7 @@ void Factory::buildApplication()
 	clockwork().start();
 	net().start();
 	accelerometerApplication().start();
+	app::JoystickApplication::instance().start();
 }
 
 #ifdef TC_MESHSIM

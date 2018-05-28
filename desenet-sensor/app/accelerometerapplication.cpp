@@ -27,6 +27,7 @@ void AccelerometerApplication::initialize()
 void AccelerometerApplication::start()
 {
 	startBehavior();	// Start state machine
+	startBehavior();
 }
 
 /**

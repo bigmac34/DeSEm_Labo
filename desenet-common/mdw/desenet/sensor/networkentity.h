@@ -55,7 +55,7 @@ protected:
 
 	// desenet::NetworkInterfaceDriver::Callback callback
 protected:
-	/**
+	/**­
 	 * @brief Called by the lower layer after reception of a new frame
 	 */
 	virtual void onReceive(NetworkInterfaceDriver & driver, const uint32_t receptionTime, const uint8_t * const buffer, size_t length);
@@ -75,15 +75,15 @@ protected:
 	NetworkInterfaceDriver * _pTransceiver;			///< Pointer to transceiver.
 
 private:
-	void svSyncRequest(AbstractApplication*);
-	bool svPublishRequest(AbstractApplication*, SvGroup group);
-	void evPublishRequest(EvId id,SharedByteBuffer & evData);
+	void svSyncRequest(AbstractApplication*);					// Application Registration
+	bool svPublishRequest(AbstractApplication*, SvGroup group);	// Request for permission to publish data
+	void evPublishRequest(EvId id,SharedByteBuffer & evData);	// Add event to the list of events
 
-	ApplicationSyncList syncApps;		// Liste des applications inscrite pour la synchronisation
-	ApplicationPublishersArray pub;		// Liste des applicaitons
-	EventElementList events;			// Liste des évenements
+	ApplicationSyncList syncApps;		// List of applications registered for synchronization
+	ApplicationPublishersArray pubApps;	// List of applications registered for publishing data
+	EventElementList events;			// Events list
 
-    MultiPDU mpdu;
+    MultiPDU mpdu;						// Frame Multi PDU
 };
 
 } // sensor

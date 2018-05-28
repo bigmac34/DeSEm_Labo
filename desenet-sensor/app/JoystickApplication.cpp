@@ -16,25 +16,37 @@ void JoystickApplication::operator=(const JoystickApplication&)
 {
 }
 
-// Initialisation de la Callback Interface
+// Initializing the Joystick
+void JoystickApplication::initialize()
+{
+	pJoystick->initialize();
+}
+
+// Initializing the Callback Interface
 void JoystickApplication::initializeRelations(IJoystick * joystick)
 {
 	pJoystick = joystick;
 	pJoystick->setObserver(this);
 }
 
+// Start the Joystick
+void JoystickApplication::start()
+{
+	pJoystick->start();
+}
+
 // Quand le joystick à changé de position
 void JoystickApplication::onPositionChange(IJoystick::Position position )
 {
-	// Copie de l'event
+	// Copy event
 	desenet::SharedByteBuffer evbuffer(1);
 	memcpy(&evbuffer, & position, 1);
 
-	// Transmission de l'event à networkEntity pour être mis dans la queue d'event
-	evPublishRequest(JOYSTICK_ID, evbuffer);
+	// Transmission of the event to networkEntity to be put in the queue of event
+	evPublishRequest(EVID_JOYSTICK, evbuffer);
 }
 
-// Instance de joystickApplication uniquement par cette fonction
+// Instance of the JoystickApplication only by this function
 JoystickApplication & JoystickApplication::instance()
 {
 	static JoystickApplication joystickApplication;
