@@ -51,7 +51,8 @@ namespace desenet
     {
     	bool valRet = false;
 
-    	if(HEADER_SIZE + offset + length + FOOTER_SIZE <= SIZE)
+    	// Test if there is enough space in the frame
+    	if((HEADER_SIZE + offset + length + FOOTER_SIZE + 2) < SIZE)
     	{
     		// Increment the ePDU counter
     		ePDUCount++;
@@ -67,7 +68,7 @@ namespace desenet
 
     		// Add header and data to the frame
     	    memcpy(buffer() + HEADER_SIZE + 2 + offset, &header, sizeof(header));
-    	    memcpy(buffer() + HEADER_SIZE + 2 + offset + 1, sharedBuffer->data(), length); // sizeof(data)
+    	    memcpy(buffer() + HEADER_SIZE + 2 + offset + 1, sharedBuffer->data(), length);
 
     	    // Increment the offset
     	    offset += length + 1;
@@ -81,7 +82,8 @@ namespace desenet
     {
     	bool valRet = false;
 
-    	if(HEADER_SIZE + offset + length + FOOTER_SIZE <= SIZE)
+    	// Test if there is enough space in the frame
+    	if((HEADER_SIZE + offset + length + FOOTER_SIZE + 2) < SIZE)
     	{
     		// Increment the ePDU counter
     		ePDUCount++;
